@@ -1,10 +1,13 @@
 
-
-
-
 .playlist{
-    width: 50%;
+    width: 60%;
     margin: auto;
+}
+/* 针对手机的样式 */
+@media (max-width: 767px) { /* 这里的 767px 可以根据你的需求调整 */
+    .playlist {
+        width: 100%; /* 手机上宽度为100% */
+    }
 }
 
 .div-center{
