@@ -12,12 +12,13 @@
     <script src="./js/APlayer.min.js"></script>
     <!-- require MetingJS -->
     <script src="./js/Meting.min.js"></script>
+    <script src="./js/index.js"></script>
     <link rel="icon" href="./images/head.jpg" type="image/x-icon">
 </head>
 
-<body>
+<body background="./images/back2.png" >
 
-    <section id="">   
+    <section id="">
         <div class="">
             <div class="div-center">
                 <h1>欢迎来到我的歌单页面&nbsp;&nbsp;&nbsp;<a href="https://tenf-blog.netlify.app/" target="_blank">返回博客</a></h1>
@@ -26,42 +27,61 @@
         </div>
     </section>
 
-    <section class="">
-        <div class="">
-            <div class="div-center">
-                <h2>收藏歌单</h2>
-            </div>
-            <div class="playlist">
-                <meting-js server="netease" type="playlist" id="2447796582" autoplay="false" list-max-height="330px">
-                </meting-js>
-            </div>
+    <!-- 按钮和歌单容器 -->
+    <div class="div-center">
+        <button onclick="showPlaylist('playlist1')">我的收藏</button>
+        <button onclick="showPlaylist('playlist2')">回忆杀</button>
+        <button onclick="showPlaylist('playlist3')">台词</button>
+        <button onclick="showPlaylist('playlist4')">英文</button>
+        <button onclick="showPlaylist('playlist5')">纯音乐</button>
+        <button onclick="showPlaylist('playlist6')">半说唱</button>
+        <button onclick="showPlaylist('playlist7')">QQ音乐歌单</button>
+        
+
+    </div>
+    
+    <section id="playlists">
+        <div id="playlist1" class="playlist">
+            <meting-js server="netease" type="playlist" id="2447796582" autoplay="false" list-max-height="360px">
+            </meting-js>
         </div>
 
-        <div class="">
-            <div class="div-center">
-                <h2>回忆杀</h2>
-            </div>
-            <div class="playlist">
-                <meting-js server="netease" type="playlist" id="8795716013" autoplay="false" list-max-height="330px">
-                </meting-js>
-            </div>
+        <div id="playlist2" class="playlist" style="display: none;">
+            <meting-js server="netease" type="playlist" id="8795716013" autoplay="false" list-max-height="360px">
+            </meting-js>
         </div>
 
-        <div class="">
-            <div class="div-center">
-                <h2>台词</h2>
-            </div>
-            <div class="playlist">
-                <meting-js server="netease" type="playlist" id="7525000650" autoplay="false" list-max-height="330px">
-                </meting-js>
-            </div>
+        <div id="playlist3" class="playlist" style="display: none;">
+            <meting-js server="netease" type="playlist" id="7525000650" autoplay="false" list-max-height="360px">
+            </meting-js>
         </div>
+
+        <div id="playlist4" class="playlist" style="display: none;">
+            <meting-js server="netease" type="playlist" id="7500150613" autoplay="false" list-max-height="360px">
+            </meting-js>
+        </div>
+
+        <div id="playlist5" class="playlist" style="display: none;">
+            <meting-js server="netease" type="playlist" id="4871089531" autoplay="false" list-max-height="360px">
+            </meting-js>
+        </div>
+
+        <div id="playlist6" class="playlist" style="display: none;">
+            <meting-js server="netease" type="playlist" id="7625638552" autoplay="false" list-max-height="360px">
+            </meting-js>
+        </div>
+
+        <div id="playlist7" class="playlist" style="display: none;">
+            <meting-js server="tencent" type="playlist" id="2163780429" autoplay="false" list-max-height="360px">
+            </meting-js>
+        </div>
+
     </section>
 
     <footer>
         <div class="div-center">
             <p>&copy; 2024 Tenf的网易云歌单. All rights reserved.</p>
-            <p>Email: <a href="mailto:2535521265@qq.ocm">2535521265@qq.com</a></p>
+            <p>Email: <a href="mailto:2535521265@qq.com">2535521265@qq.com</a></p>
         </div>
     </footer>
 

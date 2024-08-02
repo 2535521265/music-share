@@ -2,11 +2,15 @@
 .playlist{
     width: 60%;
     margin: auto;
+    transition: display 0.3s ease-in-out;
 }
+
 /* 针对手机的样式 */
 @media (max-width: 767px) { /* 这里的 767px 可以根据你的需求调整 */
     .playlist {
         width: 100%; /* 手机上宽度为100% */
+        margin: auto;
+        transition: display 0.3s ease-in-out;
     }
 }
 
@@ -20,6 +24,20 @@ body{
     padding: 0;
     font-family: Arial, sans-serif;
     /* 从左到右的渐变色背景*/
-    background: linear-gradient(to right, #98b3d3, #0ee6df);
+    /* background: linear-gradient(to right, #98b3d3, #0ee6df); */
 
+}
+
+button{
+    background-color: #f9920c;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 2px;
+    cursor: pointer;
+    border-radius: 12px;
 }

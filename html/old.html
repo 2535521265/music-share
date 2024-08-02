@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenf的网易云歌单</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="../css/APlayer.min.css">
+    <script src="../js/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="../js/Meting.min.js"></script>
+    <link rel="icon" href="../images/head.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <section id="">   
+        <div class="">
+            <div class="div-center">
+                <h1>欢迎来到我的歌单页面&nbsp;&nbsp;&nbsp;<a href="https://tenf-blog.netlify.app/" target="_blank">返回博客</a></h1>
+                <p>这里是我收藏的一些歌曲，欢迎分享，歌单会持续更新。</p>
+            </div>
+        </div>
+    </section>
+
+        <div class="">
+            <div class="div-center">
+                <h2>纯音乐</h2>
+            </div>
+            <div class="playlist">
+                <meting-js server="netease" type="playlist" id="4871089531" autoplay="false" list-max-height="330px">
+                </meting-js>
+            </div>
+        </div>
+
+
+
+    <footer>
+        <div class="div-center">
+            <p>&copy; 2024 Tenf的网易云歌单. All rights reserved.</p>
+            <p>Email: <a href="mailto:2535521265@qq.ocm">2535521265@qq.com</a></p>
+        </div>
+    </footer>
+
+    <!-- <video style=" position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -100; 
+    width: 1920px;" class="" src="./video/back.mp4" muted="muted" loop="loop" autoplay="autoplay"></video> -->
+</body>
+
+</html>
