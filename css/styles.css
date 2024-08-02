@@ -9,8 +9,6 @@
 @media (max-width: 767px) { /* 这里的 767px 可以根据你的需求调整 */
     .playlist {
         width: 100%; /* 手机上宽度为100% */
-        margin: auto;
-        transition: display 0.3s ease-in-out;
     }
 }
 
